@@ -1,0 +1,133 @@
+/* navbar */
+body{
+    background-color: gray;
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    background-color: hsl(207, 26%, 17%);
+}
+nav{
+    background-color: hsl(209, 23%, 22%);
+    height: 5vh;
+}
+.where{
+    margin-left: 3vw;
+}
+.dark{
+    margin-right: 3vw;
+}
+nav,.input-container{
+    display: flex;
+    justify-content: space-between;
+    line-height: 5vh;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.input-container{
+    width: 90vw;
+    margin: 3% auto;
+}
+.input-group, .form-select{
+    width: 20vw;
+    height: 5vh;
+}
+input[type="text"], .input-group-text, .form-select{
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+}
+
+h1{
+    text-align: center;
+    color: brown;
+}
+nav p{
+    text-align: center;
+}
+
+/* body */
+
+.country-description{
+    text-align: center;
+}
+
+/* image container */
+.images-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    
+}
+
+/* image */
+.image{
+    background-color: white;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 20vw;
+    height: 45vh;
+    border-radius: 3px;
+    background-color: hsl(209, 23%, 22%);
+
+}
+.image-details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+img{
+    width: 20vw;
+    height: 20vh;
+}
+
+
+/* tablet and lower */
+@media screen and (max-width: 768px) {
+    .images-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+
+    .input-group, .form-select{
+        width: 40vw;
+        height: 5vh;
+    }
+
+    /* images div */
+    .image{
+        width: 40vw;
+    }
+
+    /* img */
+    img{
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 500px){
+    .images-container{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-around;
+        
+    }
+    .input-container{
+        flex-direction: column;
+    }
+    .input-group, .form-select{
+        width: 90vw;
+        height: 5vh;
+    }
+    .image{
+        width: 80vw;
+    }
+
+    /* img */
+    img{
+        width: 80vw;
+    }
+}
