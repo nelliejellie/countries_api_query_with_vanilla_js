@@ -34,6 +34,7 @@ function doStuff(){
         .then(response => response.json())
         .then(region => showRegion(region) )
         .then(region => console.log(region))
+        .then(()=> handleClick())
 
     showRegion = region => {
         const charactersDiv = document.querySelector('.images-container');
@@ -115,3 +116,29 @@ function handleClick(e){
 }
 
 
+
+// make the background light
+const toggleTheme = document.querySelector('.span-dark')
+toggleTheme.addEventListener('click', function(){
+    const nav = document.querySelector('nav')
+    const body = document.querySelector('body')
+    const image = document.querySelectorAll('.image')
+
+    
+    if(nav.className !== 'nav-white'){
+        nav.setAttribute('class','nav-white')
+        body.style.backgroundColor = '#f7f2f2'
+        image.forEach(img =>{
+            img.style.backgroundColor = 'white'
+            img.style.color = 'black'
+        })
+    }else{
+        nav.setAttribute('class','')
+        body.style.backgroundColor = ''
+        image.forEach(img =>{
+            img.style.backgroundColor = ''
+            img.style.color = ''
+        })
+    }
+    
+})

@@ -9,6 +9,10 @@ nav{
     background-color: hsl(209, 23%, 22%);
     height: 5vh;
 }
+.nav-white{
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+}
 .where{
     margin-left: 3vw;
 }
@@ -30,6 +34,7 @@ nav,.input-container{
 }
 img{
     height: 30vh;
+    width: 30vw;
 }
 .back-container button{
     background-color: hsl(209, 23%, 22%);
@@ -43,11 +48,17 @@ img{
     width: 50vw;
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
 .details{
     display: flex;
     width: 20vw;
     justify-content: space-between;
+}
+.deets{
+    display: flex;
+    flex-direction: column;
+    
 }
 .detailsone, .detailstwo{
     display: flex;
@@ -57,7 +68,7 @@ img{
     margin-top: 1vh;
 }
 .border{
-    margin-top: 3vh;
+    margin-top: 2vh;
 }
 .horizontal{
     background-color: hsl(209, 23%, 22%);
@@ -67,7 +78,12 @@ img{
     box-shadow: 1px 1px 1px #000;
     margin-left: 1vw;
 }
-
+@media screen and (max-width: 2560px){
+    .image-details{
+        width: 60vw;
+        
+    }
+}
 @media screen and (max-width: 1440px){
     .image-details{
         width: 65vw;

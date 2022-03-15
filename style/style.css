@@ -1,6 +1,5 @@
 /* navbar */
 body{
-    background-color: gray;
     padding: 0%;
     margin: 0%;
     color: white;
@@ -9,6 +8,14 @@ body{
 nav{
     background-color: hsl(209, 23%, 22%);
     height: 5vh;
+}
+.nav-white{
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+}
+#body-white{
+    background-color:hsl(0, 0%, 98%) ;
+    color: black;
 }
 .where{
     margin-left: 3vw;
