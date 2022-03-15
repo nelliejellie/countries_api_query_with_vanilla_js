@@ -52,6 +52,7 @@ img{
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    
 }
 .details{
     display: flex;
@@ -113,13 +114,13 @@ img{
         flex-direction: column;
     }
     .details{
-        width: 60vw;
+        width: 90vw;
     }
 }
 
 @media screen and (max-width: 500px){
     .details{
-        width: 75vw;
+        width: 99vw;
     }
 
     img{

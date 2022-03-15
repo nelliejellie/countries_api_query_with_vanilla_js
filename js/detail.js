@@ -48,13 +48,13 @@ toggleTheme.addEventListener('click', function(){
     const nav = document.querySelector('nav')
     const body = document.querySelector('body')
     const image = document.querySelectorAll('.image')
-
+    
     
     if(nav.className !== 'nav-white'){
         nav.setAttribute('class','nav-white')
         body.style.backgroundColor = '#f7f2f2'
         image.forEach(img =>{
-            img.style.backgroundColor = 'white'
+            img.style.backgroundColor = '#f7f2f2'
             img.style.color = 'black'
         })
     }else{
