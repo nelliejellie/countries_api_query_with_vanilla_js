@@ -13,23 +13,23 @@ function countryDetail(country){
     console.log(country)
 
     imageDetails.innerHTML = `
-    <div>
+    <div class="img-cont">
         <img src="${country[0].flag}" alt="" srcset="">
     </div>
     <div class="deets">
         <p>${country[0].name}</p>
         <div class="details">
             <div class="detailsone">
-                <span class="vertical">${country[0].nativeName}</span>
-                <span class="vertical">Population: ${country[0].population}</span>
-                <span class="vertical">Region: ${country[0].region}</span>
-                <span class="vertical">Sub Region: ${country[0].subregion}</span>
-                <span class="vertical">Capital: ${country[0].capital}</span>
+                <span class="vertical"><span>Native Name</span>: ${country[0].nativeName}</span>
+                <span class="vertical"><span>Population</span>: ${country[0].population}</span>
+                <span class="vertical"><span>Region</span>: ${country[0].region}</span>
+                <span class="vertical"><span>Sub Region</span>: ${country[0].subregion}</span>
+                <span class="vertical"><span>Capital</span>: ${country[0].capital}</span>
             </div>
             <div class="detailstwo">
-                <span class="vertical">Top Leve Domain: ${country[0].topLevelDomain}</span>
-                <span class="vertical">Currencies: ${country[0].currencies[1]}</span>
-                <span class="vertical">Languages: ${country[0].languages[0].name} </span>
+                <span class="vertical"><span>Top Level Domain</span>: ${country[0].topLevelDomain}</span>
+                <span class="vertical"><span>Currencies</span>: ${country[0].currencies[1]}</span>
+                <span class="vertical"><span>Languages</span>: ${country[0].languages[0].name} </span>
             </div>
         </div>
         ${country[0].borders ? 

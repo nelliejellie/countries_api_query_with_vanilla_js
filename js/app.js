@@ -75,12 +75,12 @@ function SearchCountry(e){
         if(country.length > 0)
         {
             country.forEach(country => {
-                charactersDiv.innerHTML = `<div class="image">
+                charactersDiv.innerHTML = `<div class="image" onClick='goToDetail()'>
                 <div>
                     <img src="${country.flags.png}" alt="" srcset="">
                 </div>
                 <div  class="image-details">
-                    <p>${country.name}</p>
+                    <p class='pp'>${country.name}</p>
                     <span>Population: ${country.population}</span>
                     <span>Region: ${country.region}</span>
                     <span>Capital: ${country.capital}</span>
@@ -95,7 +95,13 @@ function SearchCountry(e){
         }
     }
 }
-
+function goToDetail(e){
+    const s = document.querySelector('.image')
+    const p = document.querySelector('.pp').innerText
+    console.log(p)
+    localStorage.setItem("value", p);
+    window.location.href = "./detail.html"
+}
 // get the value of the country clicked
 
 

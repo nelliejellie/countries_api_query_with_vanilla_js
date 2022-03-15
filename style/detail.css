@@ -36,6 +36,9 @@ img{
     height: 30vh;
     width: 30vw;
 }
+.img-cont{
+    margin-right: 20px;
+}
 .back-container button{
     background-color: hsl(209, 23%, 22%);
     color: white;
@@ -52,7 +55,7 @@ img{
 }
 .details{
     display: flex;
-    width: 20vw;
+    width: 30vw;
     justify-content: space-between;
 }
 .deets{
@@ -66,6 +69,9 @@ img{
 }
 .vertical{
     margin-top: 1vh;
+}
+.vertical span{
+    color: gray;
 }
 .border{
     margin-top: 2vh;
@@ -81,7 +87,9 @@ img{
 @media screen and (max-width: 2560px){
     .image-details{
         width: 60vw;
-        
+    }
+    img{
+        height: 30vh;
     }
 }
 @media screen and (max-width: 1440px){
